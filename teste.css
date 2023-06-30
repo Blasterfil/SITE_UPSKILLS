@@ -1,5 +1,33 @@
-section{
-    background-image: url(MOCKUP/StudyRoom.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+@font-face {
+    font-family: 'Josefin Sans';
+    src: local('Josefin Sans'), url('https://fonts.googleapis.com/css2?family=Josefin+Sans') format('truetype');
+  }
+body{
+    font-family: 'Josefin Sans';
+    color:black;
+}
+nav{
+    border-bottom: #3C3C3C1 1px solid;
+}
+.titulo{
+    font-size: 2em;
+}
+.titulo-branco{
+    font-size: 2em;
+    color: white;
+}
+.white-text{
+   color: white;
+}
+div.login{
+    background-color:#f7f3f2;
+    text-align: right;
+    padding: 1.5em;
+}
+.light-blue{
+    background-color: #00aef3;
+    padding: 1.5em;
+}
+.logo{
+    height: 4em;
 }
