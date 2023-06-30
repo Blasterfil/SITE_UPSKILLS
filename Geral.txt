@@ -1,7 +1,7 @@
 CÓDIGO DE CORES
-Cinzento claro = "f7f3f2"
-Azul claro = "00aef3"
-Azul escuro = "014f63"
+Cinzento claro = "#f7f3f2"
+Azul claro = "#00aef3"
+Azul escuro = "#014f63"
 
 ESTILOS DE TEXTO
 
