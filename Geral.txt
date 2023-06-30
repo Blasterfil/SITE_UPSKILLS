@@ -4,6 +4,17 @@ Azul claro = "#00aef3"
 Azul escuro = "#014f63"
 
 ESTILOS DE TEXTO
+//Colocar no <head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans">
+//Colocar no CSS
+@font-face {
+    font-family: 'Josefin Sans';
+    src: local('Josefin Sans'), url('https://fonts.googleapis.com/css2?family=Josefin+Sans') format('truetype');
+  }
+body{
+    font-family: 'Josefin Sans';
+    color:white;
+}
 
 BOOTSTRAP
 //Colocar no <head>
