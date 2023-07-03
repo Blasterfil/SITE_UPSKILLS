@@ -24,7 +24,7 @@ ESTILOS DE TEXTO
   }
 body{
     font-family: 'Josefin Sans';
-    color:white;
+    color:black;
 }
 
 BOOTSTRAP
