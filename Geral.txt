@@ -10,7 +10,7 @@ registo.html
 pagina_pessoal.html
 
 CÓDIGO DE CORES
-Cinzento claro = "#f7f3f2"
+Cinzento claro = "#e1e1e1"
 Azul claro = "#00aef3"
 Azul escuro = "#014f63"
 
