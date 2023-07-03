@@ -1,0 +1,11 @@
+BACKLOG
+
+Brainstorm - Responsavel - Estado - Obs
+Card Sorting - Responsavel - Estado - Obs
+
+HTML
+<header> - Filipe - Em curso - Falta colocar o menu em responsivo com o "hambúrguer"
+
+Páginas
+index - Filipe - Em curso - Falta definir o contéudo de texto; Rever tamanho das imagens; Rever cores; Falta colocar o "banner roadmap"; Falta definir as FAQ bem como a sua estrutura; Falta o formulário de contacto.
+candidatos - Responsavel - Estado - Obs
