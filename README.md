@@ -1,3 +1,3 @@
-# ![](MOCKUP/LOGO_TEAM_MONF.png) RetroSkill 
+# ![](MOCKUP/LOGO_TEAM_MONF.jpg) RetroSkill 
 
 # SITE_UPSKILLS
