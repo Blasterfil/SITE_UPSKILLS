@@ -16,14 +16,15 @@ Azul escuro = "#014f63"
 
 ESTILOS DE TEXTO
 //Colocar no <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono">
 //Colocar no CSS
 @font-face {
-    font-family: 'Josefin Sans';
-    src: local('Josefin Sans'), url('https://fonts.googleapis.com/css2?family=Josefin+Sans') format('truetype');
+    font-family: 'Space Mono';
+    src: local('Space Mono'), url('https://fonts.googleapis.com/css2?family=Space+Mono') format('truetype');
   }
 body{
-    font-family: 'Josefin Sans';
+    font-family: 'Space Mono';
+    font-size:1em;
     color:black;
 }
 
