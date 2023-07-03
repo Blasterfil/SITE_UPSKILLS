@@ -2,10 +2,26 @@ BACKLOG
 
 Brainstorm - Responsavel - Estado - Obs
 Card Sorting - Responsavel - Estado - Obs
+Questionário - Responsavel - Estado - Obs
 
 HTML
+<head> - Responsavel - Estado - Obs
 <header> - Filipe - Em curso - Falta colocar o menu em responsivo com o "hambúrguer"
+<footer> - Responsavel - Estado - Obs
 
 Páginas
 index - Filipe - Em curso - Falta definir o contéudo de texto; Rever tamanho das imagens; Rever cores; Falta colocar o "banner roadmap"; Falta definir as FAQ bem como a sua estrutura; Falta o formulário de contacto.
 candidatos - Responsavel - Estado - Obs
+bootcamp - Responsavel - Estado - Obs
+empresas - Responsavel - Estado - Obs
+faq - Responsavel - Estado - Obs
+contactos - Responsavel - Estado - Obs
+login - Responsavel - Estado - Obs
+registo - Responsavel - Estado - Obs
+pagina_pessoal - Responsavel - Estado - Obs
+
+CSS
+Definir qual o ficheiro geral e aglutinar os conteúdos de cada um - Guardar com o caminho "css/nomedoficheiro.css"
+
+TESTES
+Definir testes - Responsavel - Estado - Obs
