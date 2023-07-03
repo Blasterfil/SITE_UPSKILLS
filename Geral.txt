@@ -1,3 +1,14 @@
+PÁGINAS
+index.html
+candidatos.html
+bootcamp.html
+empresas.html
+Faqs.html  --> alterar para faq.html?
+contactos.html
+login.html
+registo.html
+pagina_pessoal.html
+
 CÓDIGO DE CORES
 Cinzento claro = "#f7f3f2"
 Azul claro = "#00aef3"
