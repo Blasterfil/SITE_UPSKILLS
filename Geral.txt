@@ -1,5 +1,16 @@
+PÁGINAS
+index.html
+candidatos.html
+bootcamp.html
+empresas.html
+Faqs.html  --> alterar para faq.html?
+contactos.html
+login.html
+registo.html
+pagina_pessoal.html
+
 CÓDIGO DE CORES
-Cinzento claro = "#f7f3f2"
+Cinzento claro = "#e1e1e1"
 Azul claro = "#00aef3"
 Azul escuro = "#014f63"
 
@@ -13,7 +24,7 @@ ESTILOS DE TEXTO
   }
 body{
     font-family: 'Josefin Sans';
-    color:white;
+    color:black;
 }
 
 BOOTSTRAP
