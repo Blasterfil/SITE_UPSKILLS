@@ -221,12 +221,52 @@
                   <section class="dark-blue">
                     <div class="center">
                       <h1 class="titulo-branco">&#47;&#47;Contactos</h1>
-                      <div  class="white-text">
-                        <span>Inserir Formulário</span>
+                      <div class="white-text">
+                        <span>Se tiver dúvidas ou questões sobre o programa UPskill entre em contacto connosco através do email!</span>
                       </div>
+                      <section class="mb-4" style="padding-top: 2em;">
+                        <div class="row">
+                            <div class="col">
+                                <form id="contact-form" name="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" id="name" name="name" class="form-control">
+                                                <label for="floatingName">Nome</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" id="email" name="email" class="form-control">
+                                                <label for="email" class="">Email</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" id="subject" name="subject" class="form-control">
+                                                <label for="subject" class="">Assunto</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-floating mb-3">
+                                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                                <label for="message">Mensagem</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="text-center text-md-left">
+                                    <a class="btn btn-light" href="index.html">Enviar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     </div>
                     </section>
-
             <footer>
               <img src="images/UPSKILL_FOOTER-2.svg" alt="Sites de Apoio" class="footer">              
             </footer>
