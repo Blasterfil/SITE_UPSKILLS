@@ -6,7 +6,7 @@ Questionário - Responsavel - Estado - Obs
 
 HTML
 <head> - Responsavel - Estado - Obs
-<header> - Filipe - Em curso - Falta colocar o menu em responsivo com o "hambúrguer"
+<header> - Filipe - FINALIZADO - Colocar o <header> em todos os ficheiros! <html><body><article><header>...</header>...</body></html>
 <footer> - Responsavel - Estado - Obs
 
 Páginas
