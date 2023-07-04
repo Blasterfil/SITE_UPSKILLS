@@ -1,24 +1,29 @@
 /*PAGINA PESSOAL*/
-.outer{
+#container{
     background: #00aef3; 
-    height: 400px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+
 }
 
 .icon{
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 
 .inner{
     /* IMAGENS */
     margin-right: 25px;
-    margin-top: 55px;
+    margin-top: 25px;
     border-radius: 2px;
     display: inline-block;
     vertical-align: top;
-    vertical-align: text-top;
     size-adjust: 2em;
     padding: 25px;
+    align-content: center;
+    
+
 
 
     /* TEXTO */
@@ -77,6 +82,7 @@
     margin: 5px;
     margin-left: 25px;
     color: #00aef3;
+    font-weight: bold;
 }
 
 #gps{
@@ -84,13 +90,8 @@
     height: 600px;
 }
 
-#UPSKILL_HOTSTOP{
-    color: #00aef3;
-    text-align: left;
-}
-
 #hotspot{
-    width: 400px;
+    width: 60em;
     height: auto;
 }
 
