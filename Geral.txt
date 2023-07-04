@@ -9,6 +9,9 @@ login.html --> Quando se carregar no submit vai directo à pagina_pessoal.html
 registo.html --> Quando se carregar no submit vai directo à pagina_pessoal.html
 pagina_pessoal.html
 
+MARKUP VALIDATION SERVICE --> Para validarmos o código html
+https://validator.w3.org/
+
 CÓDIGO DE CORES
 Cinzento claro = "#e1e1e1"
 Azul claro = "#00aef3"
