@@ -83,7 +83,8 @@ div.login{
     background-position: top;
 }
 .sombra{
-    text-shadow: 0.05em 0.05em 0.09em black;
+    text-shadow: 0.05em 0.05em 0.8em white;
+    font-weight: 900;
 }
 .logo{
     height: 4em;
