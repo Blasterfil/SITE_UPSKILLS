@@ -89,3 +89,9 @@ div.login{
 .tooltip{
     font-family: 'Space Mono';
 }
+footer{
+    text-align: center;
+}
+.footer{
+    width: 100em;
+}
