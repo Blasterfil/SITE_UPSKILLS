@@ -90,6 +90,10 @@ HEADER
             </header>
 
 FOOTER
+-- GERAL --
+<footer>
+  <img src="images/UPSKILL_FOOTER-2.svg" alt="Sites de Apoio" class="footer">              
+</footer>
 
 -- faqs --
 <head>
