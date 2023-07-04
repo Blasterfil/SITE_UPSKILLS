@@ -27,12 +27,7 @@
     size-adjust: 2em;
     padding: 25px;
     align-content: center;
-    
-
-
-
-    /* TEXTO */
-    
+    /* TEXTO */ 
     font-weight: bold;
     text-align: center;
     color: #ffffff;
@@ -74,9 +69,22 @@
 }
 
 #nome{
+    font-size: 10px;
     font-weight: bold;
     color: #fff;
     padding: 15em;
+}
+
+.info_perfil{
+  text-align: right;
+}
+
+.container{
+    padding: 25px;
+    width: 100%;
+    text-align: left;
+    
+    
 }
 
 #Apelido{
