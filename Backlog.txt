@@ -4,13 +4,13 @@ Brainstorm - Responsavel - Estado - Obs
 Card Sorting - Responsavel - Estado - Obs
 Questionário - Responsavel - Estado - Obs
 
-HTML
+# HTML
 <head> - Responsavel - Estado - Obs
 <header> - Filipe - FINALIZADO - Colocar o <header> em todos os ficheiros! <html><body><article><header>...</header>...</body></html>
 <footer> - Responsavel - Estado - Obs
 
-Páginas
-index - Filipe - Em curso - Falta definir o contéudo de texto; Rever tamanho das imagens; Rever cores; Falta colocar o "banner roadmap"; Falta definir as FAQ bem como a sua estrutura; Falta o formulário de contacto.
+# Páginas
+index - Filipe - Em curso - Falta o formulário de contacto.
 candidatos - Oliveira - Em curso - A acabar o css
 bootcamp - Oliveira - Aguardar opinioes - Se faltar alguma coisa e css
 empresas - Responsavel - Estado - Obs
@@ -20,8 +20,14 @@ login - Responsavel - Estado - Obs
 registo - Responsavel - Estado - Obs
 pagina_pessoal - Oliveira - Em curso - Css nao presta
 
-CSS
+//temos um link a apontar para a página candidatura.html que não existe. Criamos uma ou passa a apontar para o login/registo?
+Martins
+Oliveira
+Nogueira - Por mim apontamos para a página login
+Ferreira
+
+# CSS
 Definir qual o ficheiro geral e aglutinar os conteúdos de cada um - Guardar com o caminho "css/nomedoficheiro.css"
 
-TESTES
+# TESTES
 Definir testes - Responsavel - Estado - Obs
