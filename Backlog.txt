@@ -14,7 +14,7 @@ index - Filipe - Em curso - Falta o formulário de contacto.
 candidatos - Oliveira - Aguardar opinioes - Se faltar alguma coisa e css
 bootcamp - Oliveira - Aguardar opinioes - Se faltar alguma coisa e css
 empresas - Responsavel - Estado - Obs
-faq - MArtins - EsQuase acabado - falta dar final toques
+faq - Martins - Acabado - pagina acabada com footer e header
 contactos - Responsavel - Estado - Obs
 login - Responsavel - Estado - Obs
 registo - Responsavel - Estado - Obs
