@@ -11,7 +11,7 @@ Questionário - Responsavel - Estado - Obs
 
 # Páginas
 index - Filipe - Em curso - Falta o formulário de contacto.
-candidatos - Oliveira - Em curso - A acabar o css
+candidatos - Oliveira - Aguardar opinioes - Se faltar alguma coisa e css
 bootcamp - Oliveira - Aguardar opinioes - Se faltar alguma coisa e css
 empresas - Responsavel - Estado - Obs
 faq - Responsavel - Estado - Obs
