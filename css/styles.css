@@ -1,0 +1,113 @@
+/*PAGINA PESSOAL*/
+.outer{
+    background: #00aef3; 
+    height: 400px;
+}
+
+.icon{
+    width: 100px;
+    height: auto;
+}
+
+.inner{
+    /* IMAGENS */
+    margin-right: 25px;
+    margin-top: 55px;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: top;
+    vertical-align: text-top;
+    size-adjust: 2em;
+    padding: 25px;
+
+
+    /* TEXTO */
+    
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Texto_Icon{
+    margin-top: 20px;
+}
+
+#button_notas{
+    margin-top: -2px;
+    box-shadow: none;
+    border-color: #00aef3;
+    outline: #00aef3;
+    color: #ffffff;
+    background-color: #00aef3;
+}
+
+#Notas{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#Nome_Modulos{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#foto_perfil{
+    width: 300px;
+    height: auto;
+    border-color: #00aef3;
+    border-style: outset;
+    margin: 25px;
+}
+
+
+
+/* TABELAS REATIVAS*/
+.spaced{
+    padding-top: 5%;
+}
+
+/* CANDIDATOS*/
+#places-to-be{
+    margin: 5px;
+    margin-left: 25px;
+    color: #00aef3;
+}
+
+#UPSKILL_HOTSTOP{
+    color: #00aef3;
+    text-align: left;
+}
+
+#hotspot{
+    width: 400px;
+    height: auto;
+}
+
+
+.accordion{
+    color: #00aef3;
+}
+
+.accordion-header{
+    width: 100%;
+}
+
+.accordion-button{
+    margin: 1px;
+    margin-bottom: 40px;
+    background-color:#00aef3;
+    color: #00aef3;
+
+}
+
+/*MEXE O TEXTO*/
+.accordions{
+    text-align: left;
+
+}
+
+.button-title{
+    text-align: left;
+    color: #00aef3;
+
+}
