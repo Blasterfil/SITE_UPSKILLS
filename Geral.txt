@@ -6,7 +6,7 @@ empresas.html
 Faqs.html  --> alterar para faq.html?
 contactos.html
 login.html --> Quando se carregar no submit vai directo à pagina_pessoal.html
-registo.html
+registo.html --> Quando se carregar no submit vai directo à pagina_pessoal.html
 pagina_pessoal.html
 
 CÓDIGO DE CORES
