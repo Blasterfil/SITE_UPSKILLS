@@ -36,6 +36,8 @@
 .Texto_Icon{
     font-weight: bold;
     margin-top: 20px;
+    size-adjust: 3em;
+    font-size: medium;
 }
 
 #button_notas{
@@ -45,6 +47,7 @@
     outline: #00aef3;
     color: #ffffff;
     background-color: #00aef3;
+    font-weight: bold;
 }
 
 #Notas{
