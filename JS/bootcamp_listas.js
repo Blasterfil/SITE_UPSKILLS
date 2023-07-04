@@ -1,6 +1,6 @@
 function  fillTable_v2(){
     /*Vai buscar a lista .JSON*/
-    fetch('bootcamp_listas.json')
+    fetch('JS/bootcamp_listas.json')
     /*RESPONSE e a var do conteudo da lista JSON*/    
     .then(response => response.json())
         /*DATA e a variavel que contem a informação JSON*/       
