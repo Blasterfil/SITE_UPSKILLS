@@ -29,6 +29,7 @@
 }
 
 .Texto_Icon{
+    font-weight: bold;
     margin-top: 20px;
 }
 
@@ -95,9 +96,7 @@
 .accordion-button{
     margin: 1px;
     margin-bottom: 40px;
-    background-color:#00aef3;
     color: #00aef3;
-
 }
 
 /*MEXE O TEXTO*/
