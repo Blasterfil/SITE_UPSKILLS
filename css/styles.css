@@ -1,4 +1,9 @@
 /*PAGINA PESSOAL*/
+@font-face {
+    font-family: 'Space Mono';
+    src: local('Space Mono'), url('https://fonts.googleapis.com/css2?family=Space+Mono') format('truetype');
+}
+
 #container{
     background: #00aef3; 
     height: auto;
@@ -66,6 +71,89 @@
     border-color: #00aef3;
     border-style: outset;
     margin: 25px;
+}
+
+#nome{
+    font-weight: bold;
+    color: #fff;
+    padding: 15em;
+}
+
+#Apelido{
+
+}
+
+#Password{
+
+}
+
+#Passport{
+
+}
+
+#Genero{
+
+}
+
+#Nascimento{
+
+}
+
+#Nacionalidade{
+
+}
+
+#Morada{
+
+}
+
+#Qualificacao{
+
+}
+
+#Profissao{
+
+}
+
+#Motivacao{
+
+}
+
+#butoes_perfil{
+    text-align: center;
+    padding: 3%;
+}
+
+.btn-success{
+    margin-top: 2em;
+    box-shadow: none;
+    border-color: #00aef3;
+    outline: #00aef3;
+    font-weight: bold;
+    color: #00aef3;
+    background-color: #fff;
+}
+
+.btn-danger{
+    margin-top: 2em;
+    box-shadow: none;
+    border-color: #00aef3;
+    outline: #00aef3;
+    font-weight: bold;
+    color: #00aef3;
+    background-color: #fff;
+
+}
+
+.btn-info{
+    margin-top: 2em;
+    box-shadow: none;
+    border-color: #00aef3;
+    outline: #00aef3;
+    font-weight: bold;
+    color: #00aef3;
+    background-color: #fff;
+
 }
 
 

@@ -27,10 +27,10 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-underline ms-auto align-items-end">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">&lsaquo;inicio&rsaquo;</a>
+                    <a class="nav-link" aria-current="page" href="index.html">&lsaquo;inicio&rsaquo;</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="candidatos.html">&lsaquo;candidatos&rsaquo;</a>
+                    <a class="nav-link active" href="candidatos.html">&lsaquo;candidatos&rsaquo;</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="bootcamp.html">&lsaquo;bootcamp&rsaquo;</a>
@@ -148,10 +148,10 @@
                 <img src ="images/Foto_perfil.jpg" alt ="Foto Perfil" id = "foto_perfil">
                 
 
-                <div>
+                <div class = "info_perfil">
                 <!--NOME-->
                 <label for="Name">Nome:</label>
-                <input type="text" id="Name" name="Nome" placeholder= "Borat">
+                <input type="text" id="Nome" name="Nome" placeholder= "Borat">
                 <!--APELIDO-->
                 <label for="Apelido">Apelido:</label>
                 <input type="text" id="Apelido" name="Apelido" placeholder= "Sagdiyev">
@@ -183,11 +183,14 @@
                 <label for="Motivacao">Motivação:</label>
                 <textarea type="text" id="Motivacao" name="Motivacao" rows="5"
                 placeholder="Nascido numa aldeia, quis alargar os meus horizontes e decidi entao inscrever-me neste curso com uma taxa de emrpegabilidade de 200% para conseguir mudar a minha vida e sair da minha aldeia natal e voltar como o rei do Out Systems."></textarea>
+                </div>
                 <!--BUTÕES-->
-                <button type= "button" class= "btn-success">Success</button>
-                <button type= "button" class= "btn-danger">Apagar</button>
-                <button type= "button" onclick= "alert('candidatos@upskill.pt')">"Questões?"</button>
-            </div>
+                <div id = "butoes_perfil">
+                <button type= "button" class= "btn btn-success">Successo</button>
+                <button type= "button" class= "btn btn-danger">Apagar</button>
+                <button type= "button" class = "btn btn-info" onclick= "alert('candidatos@upskill.pt')">"Questões?"</button>
+                </div>
+              
             </section>
             
         </article>
