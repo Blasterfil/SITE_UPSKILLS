@@ -10,12 +10,12 @@ Questionário - Responsavel - Estado - Obs
 <footer> - Filipe - FINALIZADO - Colocar no fim do body antes de o fechar
 
 # Páginas
-index - Filipe - Em curso - Falta o formulário de contacto.
+index - Filipe - FINALIZADO
 candidatos - Oliveira - Aguardar opinioes - Se faltar alguma coisa e css
 bootcamp - Oliveira - Aguardar opinioes - Se faltar alguma coisa e css
 empresas - Martins - em construcao - Obs
 faq - Martins - Acabado - pagina acabada com footer e header
-contactos - Responsavel - Estado - Obs
+contactos - FINALIZADO
 login - Responsavel - Estado - Obs
 registo - Responsavel - Estado - Obs
 pagina_pessoal - Oliveira - Em curso - Css nao presta

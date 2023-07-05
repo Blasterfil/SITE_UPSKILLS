@@ -76,6 +76,16 @@ div.login{
     --bs-btn-border-color: white;
     --bs-btn-active-border-color: white;
   }
+.contactos{
+    background-image: url("../images/Computer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.sombra{
+    text-shadow: 0.05em 0.05em 0.8em white;
+    font-weight: 900;
+}
 .logo{
     height: 4em;
 }
