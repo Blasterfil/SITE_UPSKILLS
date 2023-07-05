@@ -51,41 +51,54 @@
                 <p class="text-center w-responsive mx-auto mb-5 sombra">Se tiver dúvidas ou questões sobre o programa UPskill entre em contacto connosco!</p>
                 <div class="row">
                     <div class="col">
-                        <form id="contact-form" name="contact-form" class="center">
+                        <form id="contact-form" name="contact-form" class="center needs-validation" novalidate>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-floating mb-3">
-                                        <input type="text" id="name" name="name" class="form-control">
+                                        <input type="text" id="name" name="name" class="form-control" required>
                                         <label for="name">Nome</label>
+                                        <div class="invalid-feedback" style="font-weight: 900;">
+                                            Por favor introduza o seu nome.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating mb-3">
-                                        <input type="text" id="email" name="email" class="form-control">
+                                        <input type="text" id="email" name="email" class="form-control" required>
                                         <label for="email" class="">Email</label>
+                                        <div class="invalid-feedback" style="font-weight: 900;">
+                                            Por favor introduza o seu Email.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-floating mb-3">
-                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <input type="text" id="subject" name="subject" class="form-control" required>
                                         <label for="subject" class="">Assunto</label>
+                                        <div class="invalid-feedback" style="font-weight: 900;">
+                                            Por favor introduza o Assunto.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-floating mb-3">
-                                        <textarea id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <textarea id="message" name="message" rows="2" class="form-control md-textarea" required></textarea>
                                         <label for="message">Mensagem</label>
+                                        <div class="invalid-feedback" style="font-weight: 900;">
+                                            Por favor introduza a sua Mensagem.
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-12 text-center center">
+                                <button class="btn btn-light" type="submit" style="font-size: 0.9em;">Enviar</button>
                             </div>
                         </form>
-                        <div class="text-center text-md-left">
-                            <a class="btn btn-light" style="font-size: 0.9em;" href="index.html">Enviar</a>
-                        </div>
+                        <div id="alertPlaceholder" style="margin-top: 2em;"></div>
                         <div class="status"></div>
                         <div class="col text-center" style="padding-top: 2em;">
                             <ul class="list-unstyled mb-0">
@@ -107,6 +120,54 @@
                 <img src="images/UPSKILL_FOOTER-2.svg" alt="Sites de Apoio" class="img-fluid footer">              
             </footer>
         </article>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script>
+            (() => {
+                'use strict';
+
+                const appendAlert = (message, type) => {
+                    const wrapper = document.createElement('div');
+                    wrapper.innerHTML = [
+                    `<div class="alert alert-${type} alert-dismissible center" role="alert" style="font-weight: 900">`,
+                    `   <div>${message}</div>`,
+                    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                    '</div>'
+                    ].join('');
+
+                    alertPlaceholder.append(wrapper);
+                    const closeButton = wrapper.querySelector('.btn-close');
+                    closeButton.addEventListener('click', () => {
+                    location.reload();
+                    });
+                };
+
+                const forms = document.querySelectorAll('.needs-validation');
+                Array.from(forms).forEach((form) => {
+                    form.addEventListener('submit', (event) => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    } else {
+                        const inputs = form.querySelectorAll('input, textarea');
+                        let allFieldsFilled = true;
+                        inputs.forEach((input) => {
+                        if (input.value.trim() === '') {
+                            allFieldsFilled = false;
+                            return;
+                        }
+                        });
+
+                        if (allFieldsFilled) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        appendAlert('Email enviado com sucesso!', 'light');
+                        }
+                    }
+
+                    form.classList.add('was-validated');
+                    }, false);
+                });
+                })();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     </body>
 </html>
