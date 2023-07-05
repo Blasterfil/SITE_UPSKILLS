@@ -1,7 +1,7 @@
 BACKLOG
 
-Brainstorm - Responsavel - Estado - Obs
-Card Sorting - Responsavel - Estado - Obs
+Brainstorm - FINALIZADO
+Card Sorting - FINALIZADO
 Questionário - Responsavel - Estado - Obs
 
 # HTML
@@ -11,14 +11,14 @@ Questionário - Responsavel - Estado - Obs
 
 # Páginas
 index - Filipe - FINALIZADO
-candidatos - Oliveira - Aguardar opinioes - Se faltar alguma coisa e css
+candidatos - Oliveira - FINALIZADO
 bootcamp - Oliveira - FINALIZADO
 empresas - Martins - em construcao - Obs
 faq - Martins - Acabado - pagina acabada com footer e header
 contactos - FINALIZADO
 login - Responsavel - Estado - Obs
 registo - Responsavel - Estado - Obs
-pagina_pessoal - Oliveira - Em curso - Css nao presta
+pagina_pessoal - Oliveira - FINALIZADO - CSS CONTINUA A SER UMA M*
 
 //temos um link a apontar para a página candidatura.html que não existe. Criamos uma ou passa a apontar para o login/registo?
 Martins - por mim apontamos para a pagina login
