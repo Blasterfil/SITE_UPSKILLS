@@ -1,0 +1,54 @@
+    <script>
+        // Get the logged-in user's email from the localStorage
+        var userEmail = localStorage.getItem("loggedInUserEmail");
+
+        // Update the email element with the user's email
+        window.addEventListener("DOMContentLoaded", function() {
+            var emailElement = document.getElementById("logged-in-email");
+            var loginLinksElement = document.getElementById("login-links");
+
+            if (userEmail) {
+                // User is logged in, show email and logout link
+                emailElement.textContent = "Logged in as " + userEmail;
+                var logoutLink = document.createElement("a");
+                logoutLink.href = "#";  // Change the href to a placeholder value   
+                logoutLink.textContent = "Logout";
+                logoutLink.addEventListener("click", function() {
+                    // Show the logout modal dialog
+                    var logoutModal = document.getElementById("logout-modal");
+                    logoutModal.style.display = "block";
+
+                    // Clear the localStorage to end the session
+                    localStorage.removeItem("loggedInUserEmail");
+
+                    // Redirect to the home page after a delay
+                    setTimeout(function() {
+                        window.location.href = "index.html";
+                    }, 2000);  // Delay in milliseconds (2 seconds in this example)
+                });
+                loginLinksElement.innerHTML = "";
+                loginLinksElement.appendChild(emailElement);
+                loginLinksElement.appendChild(logoutLink);
+            } else {
+                // User is not logged in, show login and register links
+                loginLinksElement.innerHTML = `
+                    <a href="login.html">&lsaquo;login&rsaquo;</a>
+                    <a href="registo.html">&lsaquo;registo&rsaquo;</a>
+                `;
+            }
+        });
+    </script>
+
+
+    <div id="logout-modal" class="modal" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Logging out...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+

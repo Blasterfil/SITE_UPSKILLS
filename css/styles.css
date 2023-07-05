@@ -4,8 +4,9 @@
     src: local('Space Mono'), url('https://fonts.googleapis.com/css2?family=Space+Mono') format('truetype');
 }
 
-*{
+body{
     font-family: 'Space Mono';
+    color:black;
 }
 
 #container{
@@ -16,6 +17,7 @@
 
 }
 
+
 .icon{
     width: 150px;
     height: auto;
@@ -23,7 +25,6 @@
 
 .inner{
     /* IMAGENS */
-    margin-right: 25px;
     margin-top: 25px;
     border-radius: 2px;
     display: inline-block;
@@ -49,9 +50,9 @@
     box-shadow: none;
     border-color: #00aef3;
     outline: #00aef3;
-    color: #ffffff;
+    color: #014f63;
     background-color: #00aef3;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 #Notas{
@@ -64,6 +65,8 @@
     text-decoration: none;
 }
 
+/*PAGINA PESSOAL*/
+/*INFORMAÇÂO DO PERFIL*/
 #foto_perfil{
     width: 270px;
     height: auto;
@@ -93,14 +96,12 @@
 
 #perfil_grid{
     display:grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 550px 500px 5500px;
     grid-template-rows: auto;
     text-align: left;
     text-size-adjust: 20px;
     color: #014f63;
-    align-content: center;
-    align-self: center;
-    align-items: center;
+    
 }
 
 .col{
@@ -153,28 +154,33 @@
 }
 
 
-
 /* TABELAS REATIVAS*/
 .spaced{
-    padding-top: 1%;
-    margin-bottom: 5%;
+    color: #014f63;
+    
 }
 
 #bootcamp{
+    margin: 4%;
+    text-align: center;
+    color: #014f63;
     margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 /* CANDIDATOS*/
 #places-to-be{
     margin: 5px;
-    margin-left: 25px;
+    margin-left: 5%;
     color: #00aef3;
     font-weight: bold;
 }
 
 #gps{
-    width: 100%;
+    width: 90%;
     height: 600px;
+    text-align: center;
+    margin-left: 5%;
 }
 
 #hotspot{
@@ -188,13 +194,19 @@
 }
 
 .accordion-header{
-    width: 100%;
+    width: 90%;
 }
 
 .accordion-button{
     margin: 1px;
     margin-bottom: 40px;
     color: #00aef3;
+    
+}
+
+.accordion-body{
+margin-left: 5%;
+margin-right: 5%;
 }
 
 /*MEXE O TEXTO*/
@@ -204,6 +216,7 @@
 }
 
 .button-title{
+    margin-left: 5%;
     text-align: left;
     color: #00aef3;
 
