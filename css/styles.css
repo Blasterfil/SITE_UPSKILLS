@@ -197,6 +197,12 @@
     margin: 1px;
     margin-bottom: 40px;
     color: #00aef3;
+    
+}
+
+.accordion-body{
+margin-left: 5%;
+margin-right: 5%;
 }
 
 /*MEXE O TEXTO*/
