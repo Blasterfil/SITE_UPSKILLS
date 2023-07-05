@@ -4,8 +4,10 @@
     src: local('Space Mono'), url('https://fonts.googleapis.com/css2?family=Space+Mono') format('truetype');
 }
 
-*{
+body{
     font-family: 'Space Mono';
+    font-size:1em;
+    color:black
 }
 
 #container{
