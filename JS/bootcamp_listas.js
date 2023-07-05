@@ -6,14 +6,14 @@ function  fillTable_v2(){
         /*DATA e a variavel que contem a informação JSON*/       
         .then(data => {
             
-            const bootcamp = data;
+            const bootcamps = data;
             /*Inserir a informação na TABELA COM ID "tabela"*/
             const tabela = document.getElementById("tabela");
             /*Criar os TITULOS das COLUNAS*/
             tabela.innerHTML = "<tr><th>Curso</th><th>Academias</th><th>Localizações</th><th>Estado</th></tr>";
             /*PREENCHER A TABELA de acordo com os titulos enquanto houver info*/
-            for (let bootcamps of bootcamp){
-                tabela.innerHTML += `<tr><td>${bootcamps.Curso}</td><td>${bootcamps.Academia}</td><td>${bootcamps.Localização}</td><td>${bootcamps.Estado}</td></tr>`;
+            for (let bootcamp of bootcamps){
+                tabela.innerHTML += `<tr><td>${bootcamp.Curso}</td><td>${bootcamp.Academia}</td><td>${bootcamp.Localização}</td><td>${bootcamp.Estado}</td></tr>`;
             }
         })
 
