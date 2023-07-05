@@ -55,14 +55,14 @@
                 <div class = "container-fluid" id = "container">
 
                     <div class ="inner">
-                        <img src="images/Icons_Registo.jpg" class="icon" alt="Icon do Registo" data-bs-toggle="tooltip" data-bs-placement="bottom" title="O primeiro passo é registar-se na UPskill!">
+                        <img src="images/Icons_Registo.jpg" class="icon" alt="Icon do Registo" data-bs-toggle="tooltip" data-bs-placement="top" title="O primeiro passo é registar-se na UPskill!">
                             <h5 class = "Texto_Icon">REGISTO</h5>
                             <p class = "Texto_Icon">&#x2705; Submissão de documento</p>
                             <p class = "Texto_Icon">&#x2705; Formalização de Candidatura</p>
                     </div>
 
                     <div class = "inner">
-                        <img src="images/Icons_Exames.jpg" class="icon" alt="Icon dos Exames" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Depois do registo terá de efectuar o exame de lógica e de inglês">
+                        <img src="images/Icons_Exames.jpg" class="icon" alt="Icon dos Exames" data-bs-toggle="tooltip" data-bs-placement="top" title="Depois do registo terá de efectuar o exame de lógica e de inglês">
                             <h5 class = "Texto_Icon">EXAMES</h5>
                             <p class = "Texto_Icon">&#x2705; Realização de testes</p>
                             <p class = "Texto_Icon">&#x2705; Aguardar notas</p>
@@ -71,7 +71,7 @@
                         </div>  
 
                     <div class ="inner">
-                        <img src="images/Icons_Entrevistas.jpg" class="icon" alt="Icon da Entrevista" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Se tiver notas suficientes nos exames será chamado para entrevista com a empresa que vai proporcionar o estágio">>
+                        <img src="images/Icons_Entrevistas.jpg" class="icon" alt="Icon da Entrevista" data-bs-toggle="tooltip" data-bs-placement="top" title="Se tiver notas suficientes nos exames será chamado para entrevista com a empresa que vai proporcionar o estágio">
                             <h5 class = "Texto_Icon">ENTREVISTAS</h5>                           
                             <p class = "Texto_Icon">&#x2705; Aguardar Entrevista</p>
                             <p class = "Texto_Icon">&#x2705; Entrevista Marcada </p> 
@@ -79,13 +79,13 @@
                     </div>
 
                     <div class ="inner">                            
-                        <img src="images/Icons_Curso.jpg" class="icon" alt="Icon do Curso" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Caso passe nas fases anteriores iniciará o curso que escolheu. Prepare-se para os próximos 6 meses!">>
+                        <img src="images/Icons_Curso.jpg" class="icon" alt="Icon do Curso" data-bs-toggle="tooltip" data-bs-placement="top" title="Caso passe nas fases anteriores iniciará o curso que escolheu. Prepare-se para os próximos 6 meses!">
                             <h5 class = "Texto_Icon">CURSO</h5>
                             <a href = "bootcamp.html"  class = "Texto_Icon" id = "Nome_Modulos">Modulos</a>
                     </div>
 
                     <div class ="inner">
-                        <img src="images/Icons_Estagio.jpg" class="icon" alt="Icon do Estágio"class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Após conclusão do curso e caso obtenha aprovação iniciará o seu percurso de programador num estágio com o mínimo de 3 meses.">>
+                        <img src="images/Icons_Estagio.jpg" class="icon" alt="Icon do Estágio" data-bs-toggle="tooltip" data-bs-placement="top" title="Após conclusão do curso e caso obtenha aprovação iniciará o seu percurso de programador num estágio com o mínimo de 3 meses.">
                         <h5 class = "Texto_Icon">ESTAGIO</h5>
                         <p class = "Texto_Icon">Inicio de Estágio</p>
                         <p class = "Texto_Icon">Fim de Estágio</p>
@@ -146,10 +146,13 @@
               <h5 id = "Informacao_do_candidato"><strong>Informação do Candidato</strong></h5>
               
               <div class="container-center" id="perfil_grid">
-                  <div class="row">
+                  
+                <div class="row">
+                  
                   <div class="col">
                     <img src ="images/Foto_perfil.jpg" alt ="Foto Perfil" id = "foto_perfil">
                   </div>
+                  
                   <div class="col">
                     <!--NOME-->
                     <label for="Name"> Nome:</label>
@@ -162,8 +165,10 @@
                     <input type="password" id="Password" name="Password" placeholder= "********">
                   </div>
                   </div>
+                  
                   <div class="row">
-                  <div class="col">
+                  
+                    <div class="col">
                     <!--PASSPORT-->
                     <label for="Passporte">Passporte:</label>
                     <input type="text" id="Passporte" name="Passporte" placeholder= "6847YBX213">
@@ -174,6 +179,7 @@
                     <label for="Nascimento">Data de Nascimento:</label>
                     <input type="text" id="Nascimento" name="Nascimento" placeholder= "26/06/1967">
                   </div>
+                  
                   <div class="col">
                     <!--NACIONALIDADE-->
                     <label for="Nacionalidade">Nacionalidade:</label>
@@ -185,21 +191,23 @@
                     <label for="Qualificacao">Qualificações:</label>
                     <input type="text" id="Qualificacao" name="Qualificacao" placeholder= "Astana University">
                   </div>
+                  
                   <div class="col">
                     <label for="Profissao">Profissão:</label>
                     <input type="text" id="Profissao" name="Profissao" placeholder= "Jornalista, Broadcaster, Cantor, Pintor, Jogador Ping Pong">
                     <!--MOTIVAÇÂO-->
                     <label for="Motivacao">Motivação:</label>
-                    <textarea class = "form-control" id="Motivacao" name="Motivacao" rows="5"
+                    <textarea class = "form-control" id="Motivacao" name="Motivacao" rows="5" 
                     placeholder="Nascido numa aldeia, quis alargar os meus horizontes e decidi entao inscrever-me neste curso com uma taxa de emrpegabilidade de 200% para conseguir mudar a minha vida e sair da minha aldeia natal e voltar como o rei do Out Systems."></textarea>
                   </div>
                   </div>
               </div>
 
                 <div id = "butoes_perfil">
-                <button type= "button" class= "btn btn-success">Successo</button>
-                <button type= "button" class= "btn btn-danger">Apagar</button>
+                <button type= "button" class= "btn btn-success">Submeter Candidatura</button>
                 <button type= "button" class = "btn btn-info" onclick= "alert('vai aos contactos')">"Questões?"</button>
+                <button type= "button" class= "btn btn-danger">Apagar Candidatura</button>
+                
                 </div>
 
             </section>
