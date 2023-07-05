@@ -67,29 +67,25 @@
     border-style: outset;
 }
 
-#nome{
-    font-size: 10px;
-    font-weight: bold;
-    color: #fff;
-    padding: 15em;
-}
-
 .info_perfil{
   text-align: right;
 }
 
 .container{
-    padding: 25px;
+    align-content: center;
+    padding: 5%;
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 
 #Informacao_do_candidato{
-font-weight: bold;
-padding-top: 4%;
-margin-left: 45%;
-margin-bottom: 3%;
+    font-weight: bold;
+    padding-top: 4%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: #014f63;
 }
+
 
 #perfil_grid{
     display:grid;
@@ -97,13 +93,21 @@ margin-bottom: 3%;
     grid-template-rows: auto;
     text-align: left;
     text-size-adjust: 20px;
-    margin-left: 40%;
+    color: #014f63;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.col{
+    text-align: left;
+    margin-top: 5%;
 }
 
 .row{
     font-weight: bold;
-    text-align: left;
-    margin-right: 2%;
+    font-size: medium;
+
 }
 
 #butoes_perfil{
