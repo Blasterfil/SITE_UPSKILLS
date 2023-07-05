@@ -14,16 +14,13 @@ body, html {
     height: 600px;
   }
   
-  .topleft {
-    position: center;
-    top: 0;
-    left: 16px;
-  }
-  
-  .bottomleft {
-    position: bottom;
-    bottom: 0;
-    left: 16px;
+  .middletop {
+    text-align: center;
+    top: 50%;
+    font-size: 2em;
+    padding-top: 2em;
+   
+    
   }
   
   .middle {
