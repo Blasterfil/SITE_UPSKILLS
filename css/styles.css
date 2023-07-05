@@ -152,30 +152,31 @@
 
 /* TABELAS REATIVAS*/
 .spaced{
-    padding-top: 1%;
     color: #014f63;
     
 }
 
 #bootcamp{
-    margin-top: 15px;
     margin: 4%;
     text-align: center;
     color: #014f63;
     margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 /* CANDIDATOS*/
 #places-to-be{
     margin: 5px;
-    margin-left: 25px;
+    margin-left: 5%;
     color: #00aef3;
     font-weight: bold;
 }
 
 #gps{
-    width: 100%;
+    width: 90%;
     height: 600px;
+    text-align: center;
+    margin-left: 5%;
 }
 
 #hotspot{
@@ -189,13 +190,19 @@
 }
 
 .accordion-header{
-    width: 100%;
+    width: 90%;
 }
 
 .accordion-button{
     margin: 1px;
     margin-bottom: 40px;
     color: #00aef3;
+    
+}
+
+.accordion-body{
+margin-left: 5%;
+margin-right: 5%;
 }
 
 /*MEXE O TEXTO*/
@@ -205,6 +212,7 @@
 }
 
 .button-title{
+    margin-left: 5%;
     text-align: left;
     color: #00aef3;
 
