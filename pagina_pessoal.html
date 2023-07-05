@@ -144,7 +144,8 @@
             -->
             <section>
               <h5 id = "Informacao_do_candidato"><strong>Informação do Candidato</strong></h5>
-              <div class="container text-center">
+              
+              <div class="container text-center" id="perfil_grid">
                 <div class="row">
                   <div class="col">
                     <img src ="images/Foto_perfil.jpg" alt ="Foto Perfil" id = "foto_perfil">
@@ -162,7 +163,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col1">
+                  <div class="col">
                     <!--PASSPORT-->
                     <label for="Passporte">Passporte:</label>
                     <input type="text" id="Passporte" name="Passporte" placeholder= "6847YBX213">
@@ -173,7 +174,7 @@
                     <label for="Nascimento">Data de Nascimento:</label>
                     <input type="text" id="Nascimento" name="Nascimento" placeholder= "26/06/1967">
                   </div>
-                  <div class="col2">
+                  <div class="col">
                     <!--NACIONALIDADE-->
                 <label for="Nacionalidade">Nacionalidade:</label>
                 <input type="text" id="Nacionalidade" name="Nacionalidade" placeholder= "Kazakhstani">
@@ -184,7 +185,7 @@
                 <label for="Qualificacao">Qualificações:</label>
                 <input type="text" id="Qualificacao" name="Qualificacao" placeholder= "Astana University">
                   </div>
-                  <div class="col3">
+                  <div class="col">
                   <label for="Profissao">Profissão:</label>
                   <input type="text" id="Profissao" name="Profissao" placeholder= "Jornalista, Broadcaster, Cantor, Pintor, Jogador Ping Pong">
                   <!--MOTIVAÇÂO-->
@@ -194,6 +195,13 @@
                   </div>
                 </div>
               </div>
+
+                <div id = "butoes_perfil">
+                <button type= "button" class= "btn btn-success">Successo</button>
+                <button type= "button" class= "btn btn-danger">Apagar</button>
+                <button type= "button" class = "btn btn-info" onclick= "alert('candidatos@upskill.pt')">"Questões?"</button>
+                </div>
+
             </section>
             
             <!--FEITO EM "LINHA"

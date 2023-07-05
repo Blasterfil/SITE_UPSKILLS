@@ -61,11 +61,10 @@
 }
 
 #foto_perfil{
-    width: 300px;
+    width: 270px;
     height: auto;
     border-color: #00aef3;
     border-style: outset;
-    margin: 25px;
 }
 
 #nome{
@@ -83,8 +82,6 @@
     padding: 25px;
     width: 100%;
     text-align: left;
-    
-    
 }
 
 #Informacao_do_candidato{
@@ -94,49 +91,25 @@ margin-left: 45%;
 margin-bottom: 3%;
 }
 
-#Apelido{
-
+#perfil_grid{
+    display:grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: auto;
+    text-align: left;
+    text-size-adjust: 20px;
+    margin-left: 40%;
 }
 
-#Password{
-
-}
-
-#Passport{
-
-}
-
-#Genero{
-
-}
-
-#Nascimento{
-
-}
-
-#Nacionalidade{
-
-}
-
-#Morada{
-
-}
-
-#Qualificacao{
-
-}
-
-#Profissao{
-
-}
-
-#Motivacao{
-
+.row{
+    font-weight: bold;
+    text-align: left;
+    margin-right: 2%;
 }
 
 #butoes_perfil{
     text-align: center;
     padding: 3%;
+
 }
 
 .btn-success{
