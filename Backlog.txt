@@ -12,7 +12,7 @@ Questionário - Responsavel - Estado - Obs
 # Páginas
 index - Filipe - FINALIZADO
 candidatos - Oliveira - Aguardar opinioes - Se faltar alguma coisa e css
-bootcamp - Oliveira - Aguardar opinioes - Se faltar alguma coisa e css
+bootcamp - Oliveira - FINALIZADO
 empresas - Martins - em construcao - Obs
 faq - Martins - Acabado - pagina acabada com footer e header
 contactos - FINALIZADO
@@ -22,7 +22,7 @@ pagina_pessoal - Oliveira - Em curso - Css nao presta
 
 //temos um link a apontar para a página candidatura.html que não existe. Criamos uma ou passa a apontar para o login/registo?
 Martins - por mim apontamos para a pagina login
-Oliveira
+Oliveira - por mim apontamos para a página login
 Nogueira - Por mim apontamos para a página login
 Ferreira
 
