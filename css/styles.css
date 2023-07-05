@@ -16,6 +16,7 @@
 
 }
 
+
 .icon{
     width: 150px;
     height: auto;
@@ -153,14 +154,18 @@
 }
 
 
-
 /* TABELAS REATIVAS*/
 .spaced{
     padding-top: 1%;
     margin-bottom: 5%;
+    color: #014f63;
 }
 
 #bootcamp{
+    margin-top: 15px;
+    margin: 4%;
+    text-align: center;
+    color: #014f63;
     margin-top: 2%;
 }
 
@@ -207,4 +212,7 @@
     text-align: left;
     color: #00aef3;
 
+}
+
+footer{
 }
