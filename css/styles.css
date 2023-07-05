@@ -173,7 +173,7 @@ body{
     margin: 5px;
     margin-left: 5%;
     color: #00aef3;
-    font-weight: bold;
+    margin-bottom: 2%;
 }
 
 #gps{
@@ -195,29 +195,39 @@ body{
 
 .accordion-header{
     width: 90%;
+    margin-left: 5%;
+    
 }
 
 .accordion-button{
     margin: 1px;
     margin-bottom: 40px;
-    color: #00aef3;
+    color: white;
+    background-color:#00aef3;
     
+}
+
+#aqui{
+    margin-top: 2%;
+    margin-left: 5px;
 }
 
 .accordion-body{
 margin-left: 5%;
 margin-right: 5%;
+color: #fff;
+
 }
 
 /*MEXE O TEXTO*/
 .accordions{
     text-align: left;
+    color: #fff;
 
 }
 
 .button-title{
-    margin-left: 5%;
     text-align: left;
-    color: #00aef3;
+    color: white
 
 }
