@@ -95,7 +95,7 @@ HEADER
 FOOTER
 -- GERAL --
 <footer>
-  <img src="images/UPSKILL_FOOTER-2.svg" alt="Sites de Apoio" class="footer fixed-bottom">              
+    <img src="images/UPSKILL_FOOTER-2.svg" alt="Sites de Apoio" class="img-fluid footer fixed-bottom">              
 </footer>
 
 -- faqs --
