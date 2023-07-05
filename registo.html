@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registo</title>
+  <script>
+    function togglePassword() {
+      var passwordField = document.getElementById("password");
+      var toggleCheckbox = document.getElementById("showPasswordToggle");
+
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        toggleCheckbox.nextElementSibling.textContent = "Esconder Password";
+      } else {
+        passwordField.type = "password";
+        toggleCheckbox.nextElementSibling.textContent = "Mostrar Password";
+      }
+    }
+
+    function toggleConfirmPassword() {
+      var confirmPasswordField = document.getElementById("confirmPassword");
+      var toggleCheckbox = document.getElementById("showConfirmPasswordToggle");
+
+      if (confirmPasswordField.type === "password") {
+        confirmPasswordField.type = "text";
+        toggleCheckbox.nextElementSibling.textContent = "Esconder Password";
+      } else {
+        confirmPasswordField.type = "password";
+        toggleCheckbox.nextElementSibling.textContent = "Mostrar Password";
+      }
+    }
+
+    function registerUser() {
+      var fullName = document.getElementById('fullName').value;
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      var confirmPassword = document.getElementById('confirmPassword').value;
+
+      // Check if all fields are filled
+      if (!fullName || !email || !password || !confirmPassword) {
+        alert("Please fill in all fields");
+        return;
+      }
+
+      // Check if the password and confirm password match
+      if (password !== confirmPassword) {
+        alert("Password and Confirm Password don't match");
+        return;
+      }
+
+      // Create a user object
+      var user = {
+        fullName: fullName,
+        email: email,
+        password: password
+      };
+
+      // Save the user object in localStorage
+      localStorage.setItem(email, JSON.stringify(user));
+
+      alert("Registration successful");
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body>
+  <h1>Registo</h1>
+  <form>
+    <label for="fullName">Nome Completo:</label>
+    <input type="text" id="fullName" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <label>
+      <input type="checkbox" id="showPasswordToggle" onclick="togglePassword()">
+      <span>Mostrar Password</span>
+    </label><br>
+
+    <label for="confirmPassword">Confirmar Password:</label>
+    <input type="password" id="confirmPassword" required>
+    <label>
+      <input type="checkbox" id="showConfirmPasswordToggle" onclick="toggleConfirmPassword()">
+      <span>Mostrar Password</span>
+    </label><br>
+
+    <button type="button" onclick="registerUser()">Registar</button>
+  </form>
+</body>
+</html>

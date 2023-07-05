@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <script>
+    function togglePassword() {
+      var passwordField = document.getElementById("password");
+      var toggleCheckbox = document.getElementById("showPasswordToggle");
+      if (passwordField.type === "password") {
+        passwordField.type = "text";  
+        toggleCheckbox.nextElementSibling.textContent = "Esconder Password";
+      } else {
+        passwordField.type = "password";
+        toggleCheckbox.nextElementSibling.textContent = "Mostrar Password";
+      }
+    }
+
+    function loginUser() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      // Check if the entered email and password match a user in the localStorage
+      var user = localStorage.getItem(email);
+      if (user) {
+        user = JSON.parse(user);
+
+        // Check if the entered password matches the stored password
+        if (user.password === password) {
+          alert("Login feito com sucesso");
+          sessionStorage.setItem('userEmail', email);
+          localStorage.setItem('loggedInUserEmail', email); // Add this line to store the logged-in user's email
+          window.location.href = "pagina_pessoal.html";
+        } else {
+          alert("Email ou password inválido(s)");
+        }
+      } else {
+        alert("Email ou password inválido(s)");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Login</h1>
+  <form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <label>
+      <input type="checkbox" id="showPasswordToggle" onclick="togglePassword()">
+      <span>Mostrar Password</span>
+    </label><br>
+
+    <button type="button" onclick="loginUser()">Login</button>
+  </form>
+  <script>
+    // Retrieve the user email from the session storage
+    var userEmail = sessionStorage.getItem('userEmail');
+
+    // Update the content of the "user-email" span
+    var userElement = document.getElementById('user-email');
+    if (userEmail) {
+      userElement.textContent = "Logged in as " + userEmail;
+    }
+  </script>
+</body>
+</html>
