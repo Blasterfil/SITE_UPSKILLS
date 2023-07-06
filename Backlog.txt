@@ -17,25 +17,20 @@ bootcamp - Oliveira - FINALIZADO
 empresas - Martins - FINALIZADO
 faq - Martins - Acabado - pagina acabada com footer e header -----> FALTA ALTERAR O LINK QUE APONTA PARA candidaturas.html PARA O registo.html FAQ COMO ME POSSO CANDIDATAR <--------
 contactos - Filipe - FINALIZADO
-login - Responsavel - Estado - Obs
-registo - Responsavel - Estado - Obs
+login - Vasco - FINALIZADO
+registo - Vasco - FINALIZADO
 pagina_pessoal - Oliveira - FINALIZADO - CSS CONTINUA A SER UMA M* ------> E RETIRAMOS O MENU DE NAVEGAÇÃO? <------- 
 
-//temos um link a apontar para a página candidatura.html que não existe. Criamos uma ou passa a apontar para o login/registo?
-Martins - por mim apontamos para a pagina login
-Oliveira - por mim apontamos para a página login
-Nogueira - Por mim apontamos para a página login
-Ferreira
-
 # CSS
-Definir qual o ficheiro geral e aglutinar os conteúdos de cada um - Guardar com o caminho "css/nomedoficheiro.css"
+
+Filipe - Definir qual o ficheiro geral e aglutinar os conteúdos de cada um - Guardar com o caminho "css/nomedoficheiro.css"
 
 # TESTES
 
 Definir testes - Responsavel - Estado - Obs
 
 MARKUP VALIDATION SERVICE --> Para validarmos o código html
-https://validator.w3.org/
+https://validator.w3.org/ - 
 
 WEB ACCESSIBILITY CHECKER
 https://www.websiteaccessibilitychecker.com/checker/index.php - 
