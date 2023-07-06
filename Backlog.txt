@@ -14,19 +14,19 @@ index - Filipe - FINALIZADO
 candidatos - Oliveira - FINALIZADO
 bootcamp - Oliveira - FINALIZADO
 empresas - Martins - FINALIZADO
-faq - Martins - Acabado - pagina acabada com footer e header -----> FALTA ALTERAR O LINK QUE APONTA PARA candidaturas.html PARA O registo.html FAQ COMO ME POSSO CANDIDATAR <--------
+faq - Martins - FINALIZADO
 contactos - Filipe - FINALIZADO
 login - Vasco - FINALIZADO
 registo - Vasco - FINALIZADO
-pagina_pessoal - Oliveira - FINALIZADO - CSS CONTINUA A SER UMA M* ------> E RETIRAMOS O MENU DE NAVEGAÇÃO? <------- 
+pagina_pessoal - Oliveira - FINALIZADO 
 
 # CSS
 
-Filipe - Definir qual o ficheiro geral e aglutinar os conteúdos de cada um - Guardar com o caminho "css/nomedoficheiro.css"
+FINALIZADO - FUNCIONAM TODOS
 
 # TESTES
 
-Definir testes - Responsavel - Estado - Obs
+MVS FINALIZADO COM SUCESSO EM TODAS AS PÁGINAS!!! --- SÓ EXISTEM WARNINGS ---
 
 MARKUP VALIDATION SERVICE --> Para validarmos o código html
 https://validator.w3.org/ - 
