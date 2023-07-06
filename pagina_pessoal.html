@@ -10,14 +10,55 @@
       <link rel="stylesheet" type="text/css" href="css/styles.css">
       <link rel="stylesheet" type="text/css" href="css/upskill.css">
       <link rel="stylesheet" type="text/css" href="css/Empresas.css">
+      <script>
+        window.addEventListener("DOMContentLoaded", function() {
+         var loginLinksElement = document.getElementById("login-links");
+       
+         // Get the logged-in user's email from the localStorage
+         var userEmail = localStorage.getItem("loggedInUserEmail");
+       
+         if (userEmail) {
+           // User is logged in
+           var loggedInMessage = document.createElement("span");
+           loggedInMessage.textContent = "Logged in as " + userEmail + " ";
+       
+           var logoutLink = document.createElement("a");
+           logoutLink.href = "#"; // Replace "#" with the appropriate logout URL
+           logoutLink.textContent = "Logout";
+           logoutLink.addEventListener("click", function() {
+             // Show the logout modal dialog
+             var logoutModal = document.getElementById("logout-modal");
+             logoutModal.style.display = "block";
+       
+             // Clear the localStorage to end the session
+             localStorage.removeItem("loggedInUserEmail");
+       
+             // Redirect to the home page after a delay
+             setTimeout(function() {
+               window.location.href = "index.html";
+             }, 2000); // Delay in milliseconds (2 seconds in this example)
+           });
+       
+           loginLinksElement.innerHTML = "";
+           loginLinksElement.appendChild(loggedInMessage);
+           loginLinksElement.appendChild(logoutLink);
+         } else {
+           // User is not logged in
+           loginLinksElement.innerHTML = `
+             <a href="login.html">&lsaquo;login&rsaquo;</a>
+             <a href="registo.html">&lsaquo;registo&rsaquo;</a>
+           `;
+         }
+       });
+       </script>
     </head>
     
     <body>
       <header class="sticky-top">
         <div class="login">
-            <a href="index.html">&lsaquo;logout&rsaquo;</a>
-            <!-- <a href="login.html">&lsaquo;login&rsaquo;</a>
-            <a href="registo.html">&lsaquo;registo&rsaquo;</a>-->
+          <div id="login-links">
+            <!-- Login and register links will be dynamically updated here -->
+          </div>
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -82,7 +123,7 @@
                     <div class ="inner">                            
                         <img src="images/Icons_Curso.jpg" class="icon" alt="Icon do Curso" data-bs-toggle="tooltip" data-bs-placement="top" title="Caso passe nas fases anteriores iniciará o curso que escolheu. Prepare-se para os próximos 6 meses!">
                             <h5 class = "Texto_Icon">CURSO</h5>
-                            <p class = "Texto_Icon">Modulos</p>
+                            <a href = "bootcamp.html"  class = "Texto_Icon" id = "Nome_Modulos">Modulos</a>
                     </div>
 
                     <div class ="inner">
@@ -169,7 +210,7 @@
                   
                     <div class="col">
                     <!--PASSPORT-->
-                    <label for="Passaporte">Passaporte:</label>
+                    <label for="Passaporte">Passporte:</label>
                     <input type="text" id="Passaporte" name="Passaporte" placeholder= "6847YBX213">
                     <!--GENERO-->
                     <label for="Genero">Genero:</label>
@@ -185,7 +226,7 @@
                     <input type="text" id="Nacionalidade" name="Nacionalidade" placeholder= "Kazakhstani">
                     <!--MORADA-->
                     <label for="Morada">Morada:</label>
-                    <input type="text" id="Morada" name="Morada" placeholder= "Aldeia de Kuzcek">
+                    <input type="text" id="Morada" name="Morada" placeholder= "Aldeia de Kuzcek, Kazakh SSR">
                     <!--QUALIFICAÇÕES-->
                     <label for="Qualificacao">Qualificações:</label>
                     <input type="text" id="Qualificacao" name="Qualificacao" placeholder= "Astana University">
@@ -193,7 +234,7 @@
                   
                   <div class="col">
                     <label for="Profissao">Profissão:</label>
-                    <input type="text" id="Profissao" name="Profissao" placeholder= "Jornalista">
+                    <input type="text" id="Profissao" name="Profissao" placeholder= "Jornalista, Broadcaster, Cantor, Pintor, Jogador Ping Pong">
                     <!--MOTIVAÇÂO-->
                   <div class="col">
                     <label for="Motivacao">Motivação:</label>
@@ -205,11 +246,10 @@
               </div>
 
                 <div id = "butoes_perfil">
-                <button type= "button" class= "btn btn-success"onclick = "alert('Submetido com Sucesso')">Submeter Candidatura</button>
-                <button type= "button" class = "btn btn-info" onclick = "alert('vai aos contactos')">"Questões?"</button>
-                <a href='index.html'>
-                <button type= "button" class= "btn btn-danger" onclick = >Apagar Candidatura</button>
-                </a>
+                <button type= "button" class= "btn btn-success">Submeter Candidatura</button>
+                <button type= "button" class = "btn btn-info" onclick= "alert('vai aos contactos')">"Questões?"</button>
+                <button type= "button" class= "btn btn-danger">Apagar Candidatura</button>
+                
                 </div>
 
             </section>
@@ -267,7 +307,15 @@
             </section>
           -->
         </article>
-
+        <div id="logout-modal" class="modal" style="display: none;">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>Logging out...</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <footer>
           <img src="images/UPSKILL_FOOTER-2.svg" alt="Sites de Apoio" class="img-fluid footer">
         </footer>

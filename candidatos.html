@@ -1,147 +1,247 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-      <title>Candidatos - UPskills</title>
-      <meta charset="utf-8" lang="pt">
-      <script src="bootcamp_listas.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-      <link rel = "stylesheet" type="text/css" href="css/upskill.css">
-      <link rel = "stylesheet" type="text/css" href="css/styles.css">  
-      <link rel = "stylesheet" type="text/css" href="css/Empresas.css">
-    </head>
-    
-    <body>
-        <header class="sticky-top">
-            <div class="login">
-                <a href="login.html">&lsaquo;login&rsaquo;</a>
-                <a href="registo.html">&lsaquo;registo&rsaquo;</a>
+
+<head>
+  <title>Candidatos - UPskills</title>
+  <meta charset="utf-8" lang="pt">
+  <script src="bootcamp_listas.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/upskill.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/Empresas.css">
+</head>
+<script>
+ window.addEventListener("DOMContentLoaded", function() {
+  var loginLinksElement = document.getElementById("login-links");
+
+  // Get the logged-in user's email from the localStorage
+  var userEmail = localStorage.getItem("loggedInUserEmail");
+
+  if (userEmail) {
+    // User is logged in
+    var loggedInMessage = document.createElement("span");
+    loggedInMessage.textContent = "Logged in as " + userEmail + " ";
+
+    var logoutLink = document.createElement("a");
+    logoutLink.href = "#"; // Replace "#" with the appropriate logout URL
+    logoutLink.textContent = "Logout";
+    logoutLink.addEventListener("click", function() {
+      // Show the logout modal dialog
+      var logoutModal = document.getElementById("logout-modal");
+      logoutModal.style.display = "block";
+
+      // Clear the localStorage to end the session
+      localStorage.removeItem("loggedInUserEmail");
+
+      // Redirect to the home page after a delay
+      setTimeout(function() {
+        window.location.href = "index.html";
+      }, 2000); // Delay in milliseconds (2 seconds in this example)
+    });
+
+    loginLinksElement.innerHTML = "";
+    loginLinksElement.appendChild(loggedInMessage);
+    loginLinksElement.appendChild(logoutLink);
+  } else {
+    // User is not logged in
+    loginLinksElement.innerHTML = `
+      <a href="login.html">&lsaquo;login&rsaquo;</a>
+      <a href="registo.html">&lsaquo;registo&rsaquo;</a>
+    `;
+  }
+});
+</script>
+
+<body>
+  <header class="sticky-top">
+    <div class="login">
+      <div id="login-links">
+        <!-- Login and register links will be dynamically updated here -->
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/Logo-UPskill-3aEd.png" class="logo"
+            alt="Logótipo UPskill"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-underline ms-auto align-items-end">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">&lsaquo;inicio&rsaquo;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="candidatos.html">&lsaquo;candidatos&rsaquo;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bootcamp.html">&lsaquo;bootcamp&rsaquo;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="empresas.html">&lsaquo;empresas&rsaquo;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">&lsaquo;FAQ&rsaquo;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactos.html">&lsaquo;contactos&rsaquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <article>
+    <h2 id="titulo_candidatos"> Informações para Candidatos </h2>
+    <!--ACCORDION-->
+    <section class="accordions">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseOne">
+              <span class="button-title">COMO ME POSSO CANDIDATAR?</span>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <span class="button-text">Poderá candidatar-se no separador <a href="registo.html"> Registo</a>.</span>
             </div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html"><img src="images/Logo-UPskill-3aEd.png" class="logo" alt="Logótipo UPskill"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav nav-underline ms-auto align-items-end">
-                      <li class="nav-item">
-                        <a class="nav-link " href="index.html">&lsaquo;inicio&rsaquo;</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"  href="candidatos.html">&lsaquo;candidatos&rsaquo;</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="bootcamp.html">&lsaquo;bootcamp&rsaquo;</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="empresas.html">&lsaquo;empresas&rsaquo;</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="faq.html">&lsaquo;FAQ&rsaquo;</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contactos.html">&lsaquo;contactos&rsaquo;</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </header>
-       
-        <article>
-          <h2 id = "titulo_candidatos"> Informações para Candidatos </h2>
-            <!--ACCORDION-->
-            <section class = "accordions">
-                <div class="accordion" id="accordionPanelsStayOpenExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                        <span class = "button-title">COMO ME POSSO CANDIDATAR?</span>
-                        </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                        <span class = "button-text">Poderá candidatar-se no separador <a href = "registo.html" > Registo</a>.</span>                      
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        <span class = "button-title">A FORMAÇÃO É PRESENCIAL, REMOTA OU MISTA?</span>
-                        </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                        <span class = "button-text">Por recomendação, será presencial. No entanto, poderão existir módulos ministrados de forma. .remota. Pode haver ainda parte da formação ministrada, de forma complementar, em e-learning.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        <span class = "button-title">QUE APOIOS FINANCEIROS ESTÃO PREVISTOS?</span>
-                        </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                        <span class = "button-text">Tendo em atenção que o programa exige dedicação total, o Programa assegura uma bolsa, equivalente ao salário mínimo nacional, acrescida de subsídio de alimentação, durante todo o processo formativo, seja em Academia (6 meses), seja em contexto de trabalho (3 meses). Não estão abrangidos apoios de alojamento ou de deslocação.</span>
-                        </div>
-                      </div>
-                    </div>
-                  
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                        <span class = "button-title">UPSKILL RECOMENDA SITIOS A VISITAR NO FUTURO "CLICA AQUI"</span>
-                        </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                        <span class = "button-text"><iframe id = "gps"  src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10654.984816202346!2d-9.178008526451494!3d38.68912195635605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934b005e2b55f%3A0x2b356b0c7449fc9d!2sPonte%2025%20de%20Abril!5e1!3m2!1sen!2spt!4v1688034405072!5m2!1sen!2spt"  style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span>
-                        </div>
-                      </div>
-                    </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                        <span class = "button-title">PARA MAIS INFORMAÇÕES SOBRE O LOCAL MAIS POPULAR PARA PROGRAMADORES "CLICA AQUI"</span>
-                        </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
-                        <div class="accordion-body" >
-                        <span class = "button-text"><img src = "images/25_de_abril.jpg" alt = "upskill hotspot" id = "hotspot"></span>                         
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </section>
-            <!--
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">
+              <span class="button-title">A FORMAÇÃO É PRESENCIAL, REMOTA OU MISTA?</span>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <span class="button-text">Por recomendação, será presencial. No entanto, poderão existir módulos
+                ministrados de forma. .remota. Pode haver ainda parte da formação ministrada, de forma complementar, em
+                e-learning.</span>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              <span class="button-title">QUE APOIOS FINANCEIROS ESTÃO PREVISTOS?</span>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <span class="button-text">Tendo em atenção que o programa exige dedicação total, o Programa assegura uma
+                bolsa, equivalente ao salário mínimo nacional, acrescida de subsídio de alimentação, durante todo o
+                processo formativo, seja em Academia (6 meses), seja em contexto de trabalho (3 meses). Não estão
+                abrangidos apoios de alojamento ou de deslocação.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour">
+              <span class="button-title">UPSKILL RECOMENDA SITIOS A VISITAR NO FUTURO "CLICA AQUI"</span>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <span class="button-text"><iframe id="gps"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10654.984816202346!2d-9.178008526451494!3d38.68912195635605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934b005e2b55f%3A0x2b356b0c7449fc9d!2sPonte%2025%20de%20Abril!5e1!3m2!1sen!2spt!4v1688034405072!5m2!1sen!2spt"
+                  style="border:1px;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe></span>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive">
+              <span class="button-title">PARA MAIS INFORMAÇÕES SOBRE O LOCAL MAIS POPULAR PARA PROGRAMADORES "CLICA
+                AQUI"</span>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <span class="button-text"><img src="images/25_de_abril.jpg" alt="upskill hotspot" id="hotspot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
             <section>
               <br/>
               <h5 id = "places-to-be">Upskill Sitios a visitar</h5>    
               <iframe id = "gps" src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10654.984816202346!2d-9.178008526451494!3d38.68912195635605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934b005e2b55f%3A0x2b356b0c7449fc9d!2sPonte%2025%20de%20Abril!5e1!3m2!1sen!2spt!4v1688034405072!5m2!1sen!2spt"  style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section> 
             -->
-            
-          <!-- CONTAINER ESTA A FAZER UM ESPAÇO BRANCO-->   
-          </article>
-          <div class="container">
-            <div class="row">
-                <div class="col-md-12 fixed-bottom " style="text-align: right;">
-                    <h3 class="animate-charcter">
-                        <a href="#">Topo da Página</a></text>
-                    </h3>
-                </div>
-            </div>
-        </div>
-  
-        <footer>
-          <img src="images/UPSKILL_FOOTER-2.svg" alt="Sites de Apoio" class="img-fluid footer">        
-        </footer>  
-    </body>
-</html>
 
+
+  </article>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 fixed-bottom " style="text-align: right;">
+        <h3 class="animate-charcter">
+          <a href="#">Topo da Página</a></text>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <style>
+    .animate-charcter {
+      text-transform: uppercase;
+      background-image: linear-gradient(-225deg,
+          #014f63 0%, #44107a 29%, #f7f3f2 67%, #00aef3 100%);
+
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+      font-size: 1em;
+    }
+
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+  </style>
+  <div id="logout-modal" class="modal" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Logging out...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <img src="images/UPSKILL_FOOTER-2.svg" alt="Sites de Apoio" class="img-fluid footer">
+  </footer>
+</body>
+
+</html>
