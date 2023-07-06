@@ -19,11 +19,15 @@
               if (userEmail) {
                 // User is logged in
                 var loggedInMessage = document.createElement("span");
-                loggedInMessage.textContent = "Logged in as " + userEmail + " ";
+                loggedInMessage.textContent = "//utilizador " + userEmail + " ";
+        
+                var paginaPessoal = document.createElement("a");
+                paginaPessoal.href = "pagina_pessoal.html";
+                paginaPessoal.textContent = "<perfil>  ";
         
                 var logoutLink = document.createElement("a");
                 logoutLink.href = "#"; // Replace "#" with the appropriate logout URL
-                logoutLink.textContent = "Logout";
+                logoutLink.textContent = "<logout>  ";
                 logoutLink.addEventListener("click", function () {
                   // Show the logout modal dialog
                   var logoutModal = document.getElementById("logout-modal");
@@ -40,6 +44,7 @@
         
                 loginLinksElement.innerHTML = "";
                 loginLinksElement.appendChild(loggedInMessage);
+                loginLinksElement.appendChild(paginaPessoal);
                 loginLinksElement.appendChild(logoutLink);
               } else {
                 // User is not logged in
