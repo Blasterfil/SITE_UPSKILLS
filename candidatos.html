@@ -15,54 +15,53 @@
   <link rel="stylesheet" type="text/css" href="css/upskill.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/Empresas.css">
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      var loginLinksElement = document.getElementById("login-links");
+  
+      // Get the logged-in user's email from the localStorage
+      var userEmail = localStorage.getItem("loggedInUserEmail");
+  
+      if (userEmail) {
+        // User is logged in
+        var loggedInMessage = document.createElement("span");
+        loggedInMessage.textContent = "//utilizador " + userEmail + " ";
+  
+        var paginaPessoal = document.createElement("a");
+        paginaPessoal.href = "pagina_pessoal.html";
+        paginaPessoal.textContent = "<perfil>  ";
+  
+        var logoutLink = document.createElement("a");
+        logoutLink.href = "#"; // Replace "#" with the appropriate logout URL
+        logoutLink.textContent = "<logout>  ";
+        logoutLink.addEventListener("click", function () {
+          // Show the logout modal dialog
+          var logoutModal = document.getElementById("logout-modal");
+          logoutModal.style.display = "block";
+  
+          // Clear the localStorage to end the session
+          localStorage.removeItem("loggedInUserEmail");
+  
+          // Redirect to the home page after a delay
+          setTimeout(function () {
+            window.location.href = "index.html";
+          }, 2000); // Delay in milliseconds (2 seconds in this example)
+        });
+  
+        loginLinksElement.innerHTML = "";
+        loginLinksElement.appendChild(loggedInMessage);
+        loginLinksElement.appendChild(paginaPessoal);
+        loginLinksElement.appendChild(logoutLink);
+      } else {
+        // User is not logged in
+        loginLinksElement.innerHTML = `
+             <a href="login.html">&lsaquo;login&rsaquo;</a>
+             <a href="registo.html">&lsaquo;registo&rsaquo;</a>
+           `;
+      }
+    });
+  </script>
 </head>
-<script>
-  window.addEventListener("DOMContentLoaded", function () {
-    var loginLinksElement = document.getElementById("login-links");
-
-    // Get the logged-in user's email from the localStorage
-    var userEmail = localStorage.getItem("loggedInUserEmail");
-
-    if (userEmail) {
-      // User is logged in
-      var loggedInMessage = document.createElement("span");
-      loggedInMessage.textContent = "//utilizador " + userEmail + " ";
-
-      var paginaPessoal = document.createElement("a");
-      paginaPessoal.href = "pagina_pessoal.html";
-      paginaPessoal.textContent = "<perfil>  ";
-
-      var logoutLink = document.createElement("a");
-      logoutLink.href = "#"; // Replace "#" with the appropriate logout URL
-      logoutLink.textContent = "<logout>  ";
-      logoutLink.addEventListener("click", function () {
-        // Show the logout modal dialog
-        var logoutModal = document.getElementById("logout-modal");
-        logoutModal.style.display = "block";
-
-        // Clear the localStorage to end the session
-        localStorage.removeItem("loggedInUserEmail");
-
-        // Redirect to the home page after a delay
-        setTimeout(function () {
-          window.location.href = "index.html";
-        }, 2000); // Delay in milliseconds (2 seconds in this example)
-      });
-
-      loginLinksElement.innerHTML = "";
-      loginLinksElement.appendChild(loggedInMessage);
-      loginLinksElement.appendChild(paginaPessoal);
-      loginLinksElement.appendChild(logoutLink);
-    } else {
-      // User is not logged in
-      loginLinksElement.innerHTML = `
-           <a href="login.html">&lsaquo;login&rsaquo;</a>
-           <a href="registo.html">&lsaquo;registo&rsaquo;</a>
-         `;
-    }
-  });
-</script>
-
 <body>
   <header class="sticky-top">
     <div class="login">
@@ -191,50 +190,16 @@
         </div>
       </div>
     </section>
-    <!--
-            <section>
-              <br/>
-              <h5 id = "places-to-be">Upskill Sitios a visitar</h5>    
-              <iframe id = "gps" src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10654.984816202346!2d-9.178008526451494!3d38.68912195635605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934b005e2b55f%3A0x2b356b0c7449fc9d!2sPonte%2025%20de%20Abril!5e1!3m2!1sen!2spt!4v1688034405072!5m2!1sen!2spt"  style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section> 
-            -->
-
-
   </article>
   <div class="container">
     <div class="row">
       <div class="col-md-12 fixed-bottom " style="text-align: right;">
         <h3 class="animate-charcter">
-          <a href="#">Topo da Página</a></text>
+          <a href="#">Topo da Página</a>
         </h3>
       </div>
     </div>
   </div>
-  <style>
-    .animate-charcter {
-      text-transform: uppercase;
-      background-image: linear-gradient(-225deg,
-          #014f63 0%, #44107a 29%, #f7f3f2 67%, #00aef3 100%);
-
-      background-size: auto auto;
-      background-clip: border-box;
-      background-size: 200% auto;
-      color: #fff;
-      background-clip: text;
-      -text-fill-color: transparent;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: textclip 2s linear infinite;
-      display: inline-block;
-      font-size: 1em;
-    }
-
-    @keyframes textclip {
-      to {
-        background-position: 200% center;
-      }
-    }
-  </style>
   <div id="logout-modal" class="modal" style="display: none;">
     <div class="modal-dialog">
       <div class="modal-content">
