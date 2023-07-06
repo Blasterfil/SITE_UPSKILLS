@@ -2,8 +2,7 @@ BACKLOG
 
 Brainstorm - FINALIZADO
 Card Sorting - FINALIZADO
-Questionário - Oliveira - Estado - Perguntar ao Paulo quantos user precisamos (20); Quantas questões? - Quantidade suficiente();
-Apresentação - Filipe - Estado - 
+Questionário - Oliveira - Estado - Perguntar ao Paulo quantos user precisamos (20)
 
 # HTML
 <head> - Filipe - Em curso - Finalizo quando todas as páginas estiverem fechadas!
