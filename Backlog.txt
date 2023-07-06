@@ -3,9 +3,10 @@ BACKLOG
 Brainstorm - FINALIZADO
 Card Sorting - FINALIZADO
 Questionário - Responsavel - Estado - Obs
+Apresentação - Responsavel - Estado - Obs
 
 # HTML
-<head> - Responsavel - Estado - Obs
+<head> - Filipe - Em curso - Finalizo quando todas as páginas estiverem fechadas!
 <header> - Filipe - FINALIZADO - Colocar o <header> em todos os ficheiros! <html><body><article><header>...</header>...</body></html>
 <footer> - Filipe - FINALIZADO - Colocar no fim do body antes de o fechar
 
@@ -14,11 +15,11 @@ index - Filipe - FINALIZADO
 candidatos - Oliveira - FINALIZADO
 bootcamp - Oliveira - FINALIZADO
 empresas - Martins - em construcao - Obs
-faq - Martins - Acabado - pagina acabada com footer e header
-contactos - FINALIZADO
+faq - Martins - Acabado - pagina acabada com footer e header -----> FALTA ALTERAR O LINK QUE APONTA PARA candidaturas.html PARA O index.html FAQ COMO ME POSSO CANDIDATAR <--------
+contactos - Filipe - FINALIZADO
 login - Responsavel - Estado - Obs
 registo - Responsavel - Estado - Obs
-pagina_pessoal - Oliveira - FINALIZADO - CSS CONTINUA A SER UMA M*
+pagina_pessoal - Oliveira - FINALIZADO - CSS CONTINUA A SER UMA M* -----> ALTERAMOS A BARRA QUE CONTÉM O <login> e <registo> PARA <logout>? E RETIRAMOS O MENU DE NAVEGAÇÃO? <-------
 
 //temos um link a apontar para a página candidatura.html que não existe. Criamos uma ou passa a apontar para o login/registo?
 Martins - por mim apontamos para a pagina login
