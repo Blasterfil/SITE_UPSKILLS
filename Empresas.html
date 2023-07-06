@@ -1,138 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt">
-
-<head>
-  <title>Início - UPskills</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" TYPE="text/css" href="css/upskill.css">
-  <link rel="stylesheet" Type="text/css" href="css/Empresas.css">
-  <script src="JS/Empresas.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    window.addEventListener("DOMContentLoaded", function () {
-      var loginLinksElement = document.getElementById("login-links");
-
-      // Get the logged-in user's email from the localStorage
-      var userEmail = localStorage.getItem("loggedInUserEmail");
-
-      if (userEmail) {
-        // User is logged in
-        var loggedInMessage = document.createElement("span");
-        loggedInMessage.textContent = "Logged in as " + userEmail + " ";
-
-        var logoutLink = document.createElement("a");
-        logoutLink.href = "#"; // Replace "#" with the appropriate logout URL
-        logoutLink.textContent = "Logout";
-        logoutLink.addEventListener("click", function () {
-          // Show the logout modal dialog
-          var logoutModal = document.getElementById("logout-modal");
-          logoutModal.style.display = "block";
-
-          // Clear the localStorage to end the session
-          localStorage.removeItem("loggedInUserEmail");
-
-          // Redirect to the home page after a delay
-          setTimeout(function () {
-            window.location.href = "index.html";
-          }, 2000); // Delay in milliseconds (2 seconds in this example)
-        });
-
-        loginLinksElement.innerHTML = "";
-        loginLinksElement.appendChild(loggedInMessage);
-        loginLinksElement.appendChild(logoutLink);
-      } else {
-        // User is not logged in
-        loginLinksElement.innerHTML = `
-               <a href="login.html">&lsaquo;login&rsaquo;</a>
-               <a href="registo.html">&lsaquo;registo&rsaquo;</a>
-             `;
-      }
-    });
-  </script>
-</head>
-
-<body>
-  <article>
-    <header class="sticky-top">
-      <div class="login">
-        <div id="login-links">
-          <!-- Login and register links will be dynamically updated here -->
-        </div>
-      </div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="images/Logo-UPskill-3aEd.png" class="logo"
-              alt="Logótipo UPskill"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-underline ms-auto align-items-end">
-              <li class="nav-item">
-                <a class="nav-link " href="index.html">&lsaquo;inicio&rsaquo;</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="candidatos.html">&lsaquo;candidatos&rsaquo;</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="bootcamp.html">&lsaquo;bootcamp&rsaquo;</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="empresas.html">&lsaquo;empresas&rsaquo;</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="faq.html">&lsaquo;FAQ&rsaquo;</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactos.html">&lsaquo;contactos&rsaquo;</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <div class="bgimg">
-      <div class="middle">
-        <h1>COMING SOON</h1>
-        <hr>
-        <p id="demo" style="font-size:30px"></p>
-      </div>
-      <div class="middletop">
-        <p>EM BREVE NUM BROWSER JUNTO A SI</p>
-      </div>
-    </div>
-    <div id="logout-modal" class="modal" style="display: none;">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <p>Logging out...</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <img src="images/UPSKILL_FOOTER-2.svg" alt="Sites de Apoio" class="footer">
-    </footer>
-
-  </article>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-  <script>
-    var tooltipTriggerList = [].slice.call(
-      document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    );
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl);
-    });
-  </script>
-</body>
-
+<html  lang="pt">
+    <head>
+      <title>Empresas - UPskills</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" TYPE="text/css" href="css/upskill.css">
+        <link rel="stylesheet" Type="text/css" href="css/Empresas.css">
+        <script src="JS/Empresas.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <article>
+            <header class="sticky-top">
+                <div class="login">
+                    <a href="login.html">&lsaquo;login&rsaquo;</a>
+                    <a href="registo.html">&lsaquo;registo&rsaquo;</a>
+                </div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html"><img src="images/Logo-UPskill-3aEd.png" class="logo" alt="Logótipo UPskill"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-underline ms-auto align-items-end">
+                          <li class="nav-item">
+                            <a class="nav-link "  href="index.html">&lsaquo;inicio&rsaquo;</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="candidatos.html">&lsaquo;candidatos&rsaquo;</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="bootcamp.html">&lsaquo;bootcamp&rsaquo;</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="empresas.html">&lsaquo;empresas&rsaquo;</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="faq.html">&lsaquo;FAQ&rsaquo;</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="contactos.html">&lsaquo;contactos&rsaquo;</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </header>
+                               
+            <div class="bgimg">
+                            <div class="middle">
+                <h1>COMING SOON</h1>
+                <hr>
+                <p id="demo" style="font-size:30px"></p>
+              </div>
+              <div class="middletop">
+                <p>EM BREVE NUM BROWSER JUNTO A SI</p>
+              </div>
+            </div>
+       
+              <footer>
+                <img src="images/UPSKILL_FOOTER-2.svg" alt="Sites de Apoio" class="img-fluid footer">              
+              </footer>
+           
+    </article>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
 </html>
