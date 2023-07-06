@@ -197,11 +197,10 @@ body{
 
 /*IMAGEM*/
 #hotspot{
-    width: 100%;
+    max-width: 100%;
     height: 400px;
-    margin-bottom: 2%;
     margin-right: 5%;
-    text-align: left;
+    text-align: center;
 }
 
 .accordion{
@@ -247,6 +246,7 @@ body{
 margin-left: 5%;
 margin-right: 5%;
 color:#014f63;
+text-align: center;
 }
 
 
