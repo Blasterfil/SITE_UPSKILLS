@@ -165,59 +165,99 @@ body{
     text-align: center;
     color: #014f63;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 /* CANDIDATOS*/
+#titulo_candidatos{
+    margin: 4%;
+    text-align: center;
+    color: #014f63;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
 #places-to-be{
     margin: 5px;
+    margin-bottom: 2%;
+    padding: 0.8%;
     margin-left: 5%;
-    color: #00aef3;
-    font-weight: bold;
+    margin-right: 5%;
+    background-color:#014f63;
 }
 
+
+/*MAPA*/
 #gps{
-    width: 90%;
+    width: 100%;
     height: 600px;
     text-align: center;
-    margin-left: 5%;
 }
 
+/*IMAGEM*/
 #hotspot{
-    width: 60em;
-    height: auto;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    text-align: left;
 }
-
 
 .accordion{
-    color: #00aef3;
+    color: #00aef3;   
+}
+
+/*TESTE*/
+#accordions{
+    margin-top: 5%;
+    background-color:#00aef3;   
+    size-adjust: 2em;
+    color: #ffffff;
+    margin-left: 5%;
+    margin-right: 5%; 
+    width: 90%; 
 }
 
 .accordion-header{
     width: 90%;
+    margin-left: 5%;    
+}
+
+.accordion-collapse{
+   border: #ffffff;
 }
 
 .accordion-button{
-    margin: 1px;
-    margin-bottom: 40px;
+    margin-top: 5%;
+    background-color:#00aef3;   
+    size-adjust: 2em;
     color: #00aef3;
+}
+
+
+#aqui{
+    margin-top: 2%;
+    margin-bottom: 2%;
     
 }
 
+/*MEXE O TEXTO INTERNO*/
 .accordion-body{
 margin-left: 5%;
 margin-right: 5%;
+color:#014f63;
 }
 
-/*MEXE O TEXTO*/
+
 .accordions{
     text-align: left;
+    color: #014f63;
 
 }
 
+/*TEXTO BOTAO*/
 .button-title{
-    margin-left: 5%;
     text-align: left;
-    color: #00aef3;
-
+    color: white;
 }
