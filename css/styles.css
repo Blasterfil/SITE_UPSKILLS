@@ -169,65 +169,77 @@ body{
 }
 
 /* CANDIDATOS*/
-#places-to-be{
-    margin: 5px;
-    margin-left: 5%;
-    color: #00aef3;
+#titulo_candidatos{
+    margin: 4%;
+    text-align: center;
+    color: #014f63;
+    margin-top: 2%;
     margin-bottom: 2%;
 }
 
+#places-to-be{
+    margin: 5px;
+    margin-bottom: 2%;
+    padding: 0.8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color:#014f63;
+}
+
 #gps{
-    width: 90%;
+    width: 100%;
     height: 600px;
     text-align: center;
-    margin-left: 5%;
 }
 
 #hotspot{
-    width: 60em;
-    height: auto;
-}
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    text-align: left;
 
+}
 
 .accordion{
     color: #00aef3;
+    
 }
 
 .accordion-header{
     width: 90%;
     margin-left: 5%;
+
     
 }
 
 .accordion-button{
-    margin: 1px;
-    margin-bottom: 40px;
-    color: white;
-    background-color:#00aef3;
-    
+    margin-top: 5%;
+    background-color:#00aef3;   
 }
 
 #aqui{
     margin-top: 2%;
-    margin-left: 5px;
+    margin-bottom: 2%;
+    
 }
 
 .accordion-body{
 margin-left: 5%;
 margin-right: 5%;
-color: #fff;
-
+color:#014f63;
 }
 
 /*MEXE O TEXTO*/
 .accordions{
     text-align: left;
-    color: #fff;
+
 
 }
 
 .button-title{
     text-align: left;
-    color: white
+    color: white;
+    
 
 }
