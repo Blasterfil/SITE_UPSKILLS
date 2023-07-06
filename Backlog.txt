@@ -19,7 +19,7 @@ faq - Martins - Acabado - pagina acabada com footer e header -----> FALTA ALTERA
 contactos - Filipe - FINALIZADO
 login - Responsavel - Estado - Obs
 registo - Responsavel - Estado - Obs
-pagina_pessoal - Oliveira - FINALIZADO - CSS CONTINUA A SER UMA M* -----> ALTERAMOS A BARRA QUE CONTÉM O <login> e <registo> PARA <logout>? E RETIRAMOS O MENU DE NAVEGAÇÃO? <-------
+pagina_pessoal - Oliveira - FINALIZADO - CSS CONTINUA A SER UMA M* ------> E RETIRAMOS O MENU DE NAVEGAÇÃO? <------- 
 
 //temos um link a apontar para a página candidatura.html que não existe. Criamos uma ou passa a apontar para o login/registo?
 Martins - por mim apontamos para a pagina login
