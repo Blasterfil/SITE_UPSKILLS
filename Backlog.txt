@@ -2,7 +2,7 @@ BACKLOG
 
 Brainstorm - FINALIZADO
 Card Sorting - FINALIZADO
-Questionário - Oliveira - Estado - Perguntar ao Paulo quantos user precisamos (20)
+Questionário - Oliveira - https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__akOUxRUNFBSSUs2VUNVNlRFTFBLRjNZN1RRM0QyOC4u
 
 # HTML
 <head> - Filipe - Em curso - Finalizo quando todas as páginas estiverem fechadas!
