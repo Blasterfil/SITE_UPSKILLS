@@ -15,7 +15,7 @@ index - Filipe - FINALIZADO
 candidatos - Oliveira - FINALIZADO
 bootcamp - Oliveira - FINALIZADO
 empresas - Martins - FINALIZADO
-faq - Martins - Acabado - pagina acabada com footer e header -----> FALTA ALTERAR O LINK QUE APONTA PARA candidaturas.html PARA O index.html FAQ COMO ME POSSO CANDIDATAR <--------
+faq - Martins - Acabado - pagina acabada com footer e header -----> FALTA ALTERAR O LINK QUE APONTA PARA candidaturas.html PARA O registo.html FAQ COMO ME POSSO CANDIDATAR <--------
 contactos - Filipe - FINALIZADO
 login - Responsavel - Estado - Obs
 registo - Responsavel - Estado - Obs
