@@ -31,4 +31,11 @@ Ferreira
 Definir qual o ficheiro geral e aglutinar os conteúdos de cada um - Guardar com o caminho "css/nomedoficheiro.css"
 
 # TESTES
+
 Definir testes - Responsavel - Estado - Obs
+
+MARKUP VALIDATION SERVICE --> Para validarmos o código html
+https://validator.w3.org/
+
+WEB ACCESSIBILITY CHECKER
+https://www.websiteaccessibilitychecker.com/checker/index.php
