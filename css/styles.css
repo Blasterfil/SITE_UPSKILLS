@@ -208,18 +208,20 @@ body{
 
 /*TESTE*/
 #accordions{
-    margin-top: 5%;
+    /*margin-top: 1em;*/
     background-color:#00aef3;   
     size-adjust: 2em;
     color: #ffffff;
-    margin-left: 5%;
-    margin-right: 5%; 
-    width: 90%; 
+    /*margin-left: 5%;
+    margin-right: 5%;*/ 
+    width: 50%; 
+    margin: auto;
 }
 
 .accordion-header{
-    width: 90%;
-    margin-left: 5%;    
+    margin: auto;
+    width: 50%;
+    /*margin-left: 5%;*/    
 }
 
 .accordion-collapse{
@@ -229,7 +231,7 @@ body{
 .accordion-button{
     margin-top: 5%;
     background-color:#00aef3;   
-    size-adjust: 2em;
+    /*size-adjust: 2em;*/
     color: #00aef3;
 }
 
@@ -242,10 +244,12 @@ body{
 
 /*MEXE O TEXTO INTERNO*/
 .accordion-body{
-margin-left: 5%;
-margin-right: 5%;
-color:#014f63;
-text-align: center;
+    /*margin-left: 5%;
+    margin-right: 5%;*/
+    width: 50%; 
+    margin: auto;
+    color:#014f63;
+    text-align: center;
 }
 
 
