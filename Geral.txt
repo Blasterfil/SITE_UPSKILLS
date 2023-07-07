@@ -1,13 +1,13 @@
 PÁGINAS
-index.html - Teste Accessibility: PASSED!
-candidatos.html - Teste Accessibility: PASSED!
-bootcamp.html - Teste Accessibility: PASSED!
-empresas.html - Teste Accessibility: PASSED!
-faq.html - Teste Accessibility: PASSED!
-contactos.html - Teste Accessibility: PASSED!
-login.html - Teste Accessibility: PASSED!
+index.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+candidatos.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+bootcamp.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+empresas.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+faq.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+contactos.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+login.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
 registo.html - Teste Accessibility: PASSED!
-pagina_pessoal.html - Teste Accessibility: PASSED!
+pagina_pessoal.html - Teste Accessibility: PASSED! --TEM ERROS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 MARKUP VALIDATION SERVICE --> Para validarmos o código html
 https://validator.w3.org/
