@@ -5,7 +5,7 @@ Card Sorting - FINALIZADO
 Questionário - Oliveira - https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__akOUxRUNFBSSUs2VUNVNlRFTFBLRjNZN1RRM0QyOC4u
 
 # HTML
-<head> - Filipe - Em curso - Finalizo quando todas as páginas estiverem fechadas!
+<head> - Filipe - FINALIZADO
 <header> - Filipe - FINALIZADO - Colocar o <header> em todos os ficheiros! <html><body><article><header>...</header>...</body></html>
 <footer> - Filipe - FINALIZADO - Colocar no fim do body antes de o fechar
 
