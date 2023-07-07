@@ -116,45 +116,47 @@ body{
 
 #butoes_perfil{
     text-align: center;
-    padding: 2%;
-    display: block
-}
-
-#danger{
-    font-size: medium;
-    width: 221px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-success{
-    margin-top: 2em;
+    margin-top: 3em;
     box-shadow: none;
     border-color: #00aef3;
     outline: #00aef3;
     font-weight: bold;
     color: #00aef3;
     background-color: #fff;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .btn-danger{
-    margin-top: 2em;
+    margin-top: 3em;
     box-shadow: none;
     border-color: #00aef3;
     outline: #00aef3;
     font-weight: bold;
     color: #00aef3;
     background-color: #fff;
-
+    font-size: medium;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
+
+
 .btn-info{
-    margin-top: 2em;
+    margin-top: 3em;
     box-shadow: none;
     border-color: #00aef3;
     outline: #00aef3;
     font-weight: bold;
     color: #00aef3;
     background-color: #fff;
-
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
