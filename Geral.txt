@@ -1,13 +1,13 @@
 PÁGINAS
-index.html
-candidatos.html
-bootcamp.html
-empresas.html
-faq.html
-contactos.html
-login.html --> Quando se carregar no submit vai directo à pagina_pessoal.html
-registo.html --> Quando se carregar no submit vai directo à login.html
-pagina_pessoal.html
+index.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+candidatos.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+bootcamp.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+empresas.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+faq.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+contactos.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+login.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+registo.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
+pagina_pessoal.html - Teste Accessibility: PASSED! --TEM ERROS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 MARKUP VALIDATION SERVICE --> Para validarmos o código html
 https://validator.w3.org/
