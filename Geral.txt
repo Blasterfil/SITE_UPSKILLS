@@ -6,7 +6,7 @@ empresas.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
 faq.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
 contactos.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
 login.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
-registo.html - Teste Accessibility: PASSED!
+registo.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
 pagina_pessoal.html - Teste Accessibility: PASSED! --TEM ERROS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 MARKUP VALIDATION SERVICE --> Para validarmos o código html
