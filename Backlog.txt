@@ -2,7 +2,8 @@ BACKLOG
 
 Brainstorm - FINALIZADO
 Card Sorting - FINALIZADO
-Questionário - Oliveira - https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__akOUxRUNFBSSUs2VUNVNlRFTFBLRjNZN1RRM0QyOC4u
+Questionário - Oliveira - https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__akOUxRUNFBSSUs2VUNVNlRFTFBLRjNZN1RRM0QyOC4u - FINALIZADO - 10 respostas ate agora
+Apresentação
 
 # HTML
 <head> - Filipe - FINALIZADO
