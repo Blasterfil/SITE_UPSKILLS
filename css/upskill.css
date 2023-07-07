@@ -76,6 +76,12 @@ div.login{
     --bs-btn-border-color: white;
     --bs-btn-active-border-color: white;
   }
+
+  .custom-button-grey{
+    --bs-btn-hover-border-color: #e1e1e1;
+    --bs-btn-border-color: #e1e1e1;
+    --bs-btn-active-border-color: #e1e1e1;
+  }
 .contactos{
     background-image: url("../images/Computer.jpg");
     background-size: cover;
