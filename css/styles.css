@@ -116,8 +116,13 @@ body{
 
 #butoes_perfil{
     text-align: center;
-    padding: 3%;
+    padding: 2%;
+    display: block
+}
 
+#danger{
+    font-size: medium;
+    width: 220px;
 }
 
 .btn-success{
