@@ -7,7 +7,7 @@ Para este projecto pensámos em desenvolver o website da UPskill com a finalidad
 
 ## MAPA DO SITE
 
-[<index>](index.html). Página inicial onde apresenta o programa UPskill e um "preview" das páginas constantes do site onde podem aceder a informação mais detalhada.
+[index](index.html). Página inicial onde apresenta o programa UPskill e um "preview" das páginas constantes do site onde podem aceder a informação mais detalhada.
 
 [<candidatos>](candidatos.html). Página com toda a informação relativa aos candidatos.
 
