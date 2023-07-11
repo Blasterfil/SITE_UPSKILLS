@@ -3,7 +3,7 @@ BACKLOG
 Brainstorm - FINALIZADO
 Card Sorting - FINALIZADO
 Questionário - Oliveira - https://forms.microsoft.com/r/mGtwaq3PWP - FINALIZADO - 10 respostas ate agora
-Apresentação
+Apresentação 
 
 # HTML
 <head> - Filipe - FINALIZADO
@@ -27,10 +27,11 @@ FINALIZADO - FUNCIONAM TODOS
 
 # TESTES
 
-MVS FINALIZADO COM SUCESSO EM TODAS AS PÁGINAS!!! --- SÓ EXISTEM WARNINGS ---
+MVS FINALIZADO COM SUCESSO EM TODAS AS PÁGINAS!!!
+WAC FINALIZADO COM SUCESSO EM TODAS AS PÁGINAS!!!
 
 MARKUP VALIDATION SERVICE --> Para validarmos o código html
-https://validator.w3.org/ - 
+https://validator.w3.org/ 
 
-WEB ACCESSIBILITY CHECKER
+WEB ACCESSIBILITY CHECKER --> Para validarmos a acessibilidade
 https://www.websiteaccessibilitychecker.com/checker/index.php
