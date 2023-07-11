@@ -11,7 +11,7 @@ pagina_pessoal.html - Teste Accessibility: PASSED! -Teste MVS:PASSED!
 
 CAMINHO DE FICHEIROS
 css/ --> ficheiros externos .css
-js/ --> ficheiros externos .js
+js/ --> ficheiros externos .js/.json
 images/ --> ficheiros imagens .png/.jpg
 
 
