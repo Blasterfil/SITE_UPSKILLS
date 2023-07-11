@@ -23,3 +23,6 @@ Para este projecto pensámos em desenvolver o website da UPskill com a finalidad
 
 - [Registo](registo.html). Página de registo onde o candidato terá de fazer o registo para ter acesso à candidatura.
 
+## QUESTIONÁRIO && RESULTADOS
+
+Para consultar o Questionário clique [aqui](MOCKUP/)
