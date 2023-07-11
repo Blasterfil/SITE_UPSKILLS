@@ -9,6 +9,12 @@ login.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
 registo.html - Teste Accessibility: PASSED! - Teste MVS:PASSED!
 pagina_pessoal.html - Teste Accessibility: PASSED! -Teste MVS:PASSED!
 
+CAMINHO DE FICHEIROS
+css/ --> ficheiros externos .css
+js/ --> ficheiros externos .js
+images/ --> ficheiros imagens .png/.jpg
+
+
 CÓDIGO DE CORES
 Cinzento claro = "#e1e1e1"
 Azul claro = "#00aef3"
